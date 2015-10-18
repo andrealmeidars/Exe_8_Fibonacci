@@ -14,16 +14,20 @@ public class FibonacciTest {
 
     }
 
-    @Test
-    public void showTrueIfNumberIs1(){
-        assertThat(fibonacci.fibonacciSequence(1), is(true));
 
+    @Test
+    public void showFibonacciWith1Number() {
+        assertThat(fibonacci.fiboCalculate(4), is(3));
     }
 
     @Test
-    public void showTrueIfNumberIs2() {
-        assertThat(fibonacci.fibonacciSequence(2), is(true));
+    public void showFibonacciSequenceWithRange10() {
+        assertThat(fibonacci.fibonacciSequence(10), is("-0-1-1-2-3-5-8-13-21-34-55"));
     }
+
+
+
+
 
 
 

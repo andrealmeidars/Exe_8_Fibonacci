@@ -4,13 +4,23 @@ public class Fibonacci {
 
 
 
-    public boolean fibonacciSequence(int value){
+    public int fiboCalculate(int value){
 
-        if ((value == 1) || (value == 2) ){
-            return true;
+        return (value < 2) ? value : fiboCalculate(value - 1) + fiboCalculate( value - 2);
+    }
+
+
+
+
+    public String fibonacciSequence(int rangeValue){
+
+        String sequence = "";
+
+        for (int i = 0; i <= rangeValue; i++){
+            sequence = sequence + "-"+ fiboCalculate(i);
         }
 
-        return false;
+        return sequence;
     }
 
 
