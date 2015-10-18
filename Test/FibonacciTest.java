@@ -20,8 +20,15 @@ public class FibonacciTest {
 
     }
 
+    @Test
+    public void showTrueIfNumberIs2() {
+        assertThat(fibonacci.fibonacciSequence(2), is(true));
+    }
 
 
 
 
-}
+
+
+
+    }
